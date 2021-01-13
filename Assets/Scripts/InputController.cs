@@ -10,7 +10,7 @@ public class InputController : MonoBehaviour
     public bool habilidad2 { get; private set; }
     public bool inventario { get; private set; }
     public bool interactuar { get; private set; }
-    public Vector2 lookDirection {get; private set;}
+    public Vector2 lookDirection {get; private set;} = new Vector2(0,-1f);
     
     // Start is called before the first frame update
     void Start()

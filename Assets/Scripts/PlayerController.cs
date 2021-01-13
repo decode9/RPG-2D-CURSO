@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     int runHash;
     int xHash;
     int yHash;
+    int attackHash;
     private Attacker attacker;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class PlayerController : MonoBehaviour
         runHash = Animator.StringToHash("correr");
         xHash = Animator.StringToHash("x");
         yHash = Animator.StringToHash("y");
+        attackHash = Animator.StringToHash("attack");
     }
 
     private void Update() {
@@ -44,17 +46,18 @@ public class PlayerController : MonoBehaviour
 
     private void Attack(){
         bool attack = InputPlayer.atacar;
-        movimiento = InputPlayer.vector;
-
-        if(attack) attacker.Attack(InputPlayer.lookDirection, playerAttributes.ataque);
+        
+        if(attack){
+            animator.SetBool(attackHash, attack);
+            animator.SetFloat(xHash, InputPlayer.lookDirection.x);
+            animator.SetFloat(yHash, InputPlayer.lookDirection.y);
+        };
     }
 
     void Animation(float[] movimiento){
         bool run = (movimiento[1] != 0 || movimiento[0] != 0);
 
         animator.SetBool(runHash, run);
-        mySprite.flipX = (movimiento[0] < 0 && Mathf.Abs(movimiento[1]) < Mathf.Abs(movimiento[0]));
-
         if (run){
             animator.SetFloat(xHash, movimiento[0]);
             animator.SetFloat(yHash, movimiento[1]);
@@ -66,12 +69,18 @@ public class PlayerController : MonoBehaviour
         movimiento = InputPlayer.vector;
         
         Animation(movimiento);
-
         // ---- Movimiento de Cuerpo Rigido ---- //
         Vector2 velocityVector = new Vector2(movimiento[0], movimiento[1]) * playerAttributes.velocity;
+        if(animator.GetBool(attackHash)) velocityVector = Vector2.zero;
+        
         //myRigid.AddForce(velocityVector);
         myRigid.velocity = velocityVector;
 
+    }
+
+    void AttackController(){
+        attacker.Attack(InputPlayer.lookDirection, playerAttributes.ataque);
+        animator.SetBool(attackHash, false);
     }
 }
 
