@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8235212186188990496}
   - component: {fileID: 8235212186188990497}
   - component: {fileID: 8235212186188990502}
+  - component: {fileID: 1166024598}
+  - component: {fileID: 1375012477}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -111,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5690824a24a718644911d9af67384f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 3
 --- !u!50 &8235212186188990496
 Rigidbody2D:
   serializedVersion: 4
@@ -189,3 +190,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1166024598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235212186188990511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43b9e9563bccc8243b27e8146c25e8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1375012477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235212186188990511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bf4c45b5bcd7b47bc56b2e9de83065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: 6
+  ataque: 1

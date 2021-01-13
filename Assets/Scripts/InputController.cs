@@ -10,6 +10,7 @@ public class InputController : MonoBehaviour
     public bool habilidad2 { get; private set; }
     public bool inventario { get; private set; }
     public bool interactuar { get; private set; }
+    public Vector2 lookDirection {get; private set;}
     
     // Start is called before the first frame update
     void Start()
@@ -37,6 +38,7 @@ public class InputController : MonoBehaviour
     {
         float[] v = {Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")};
         vector = v;
+        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") !=0) lookDirection = new Vector2(v[0], v[1]);
     }
 
     public bool getAtacar()

@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Attributes))]
 public class PlayerController : MonoBehaviour
 {
     private InputController InputPlayer;
     private Transform transformada;
-    public float velocidad;
     private float[] movimiento = new float[2];
     private Rigidbody2D myRigid;
     private Animator animator;
     private SpriteRenderer mySprite; 
+
+    private Attributes playerAttributes;
     int runHash;
     int xHash;
     int yHash;
+    private Attacker attacker;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,15 +25,28 @@ public class PlayerController : MonoBehaviour
         myRigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         mySprite = GetComponent<SpriteRenderer>();
+        playerAttributes = GetComponent<Attributes>();
+        attacker = GetComponent<Attacker>();
         runHash = Animator.StringToHash("correr");
         xHash = Animator.StringToHash("x");
         yHash = Animator.StringToHash("y");
+    }
+
+    private void Update() {
+        Attack();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         movePlayer();
+    }
+
+    private void Attack(){
+        bool attack = InputPlayer.atacar;
+        movimiento = InputPlayer.vector;
+
+        if(attack) attacker.Attack(InputPlayer.lookDirection, playerAttributes.ataque);
     }
 
     void Animation(float[] movimiento){
@@ -52,7 +68,7 @@ public class PlayerController : MonoBehaviour
         Animation(movimiento);
 
         // ---- Movimiento de Cuerpo Rigido ---- //
-        Vector2 velocityVector = new Vector2(movimiento[0], movimiento[1]) * velocidad;
+        Vector2 velocityVector = new Vector2(movimiento[0], movimiento[1]) * playerAttributes.velocity;
         //myRigid.AddForce(velocityVector);
         myRigid.velocity = velocityVector;
 

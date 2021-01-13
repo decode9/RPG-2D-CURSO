@@ -1,30 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform player;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
+   private CinemachineVirtualCamera cv;
+   public GameObject player;
 
-    // Update is called once per frame
-    void Update()
-    {
-        FollowCamera();
-    }
+   private void Start() {
+       cv = GetComponent<CinemachineVirtualCamera>();
+       player = GameManager.instance.player;
+       cv.m_Follow = player.transform;
+   }
 
-    void FollowCamera(){
-        float positionX = player.position.x;
-        float positionY = player.position.y;
 
-        MoveCamera(positionX, positionY);
-    }
-
-    void MoveCamera(float coordenadaX, float coordenadaY){
-        Vector3 newPosition = new Vector3(coordenadaX, coordenadaY, transform.position.z);
-        transform.position = newPosition;
-    }
 }
