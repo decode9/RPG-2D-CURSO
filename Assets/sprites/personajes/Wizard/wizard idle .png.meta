@@ -1,0 +1,713 @@
+fileFormatVersion: 2
+guid: dd4f396cabeccf34eb365802c2ed11e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1050075401580613888
+    second: wizard idle _0
+  - first:
+      213: -1212681361315600092
+    second: wizard idle _1
+  - first:
+      213: 4229139764721780924
+    second: wizard idle _2
+  - first:
+      213: -6325232480247534714
+    second: wizard idle _3
+  - first:
+      213: 9182200881268181850
+    second: wizard idle _4
+  - first:
+      213: 6305575469833388519
+    second: wizard idle _5
+  - first:
+      213: -8750111013188354236
+    second: wizard idle _6
+  - first:
+      213: 8743378406656910180
+    second: wizard idle _7
+  - first:
+      213: 5477465380218942275
+    second: wizard idle _8
+  - first:
+      213: -5751207705345250727
+    second: wizard idle _9
+  - first:
+      213: 8449569548169851773
+    second: wizard idle _10
+  - first:
+      213: 2913871799320472177
+    second: wizard idle _11
+  - first:
+      213: 524770781935640087
+    second: wizard idle _12
+  - first:
+      213: 1480453191146032735
+    second: wizard idle _13
+  - first:
+      213: 3135433133956997179
+    second: wizard idle _0
+  - first:
+      213: 8967023006899679458
+    second: wizard idle _1
+  - first:
+      213: -3728240274754752370
+    second: wizard idle _2
+  - first:
+      213: -652588891922703606
+    second: wizard idle _3
+  - first:
+      213: -6832214743152446468
+    second: wizard idle _4
+  - first:
+      213: -103004595257587261
+    second: wizard idle _5
+  - first:
+      213: -7435300458306043848
+    second: wizard idle _6
+  - first:
+      213: -4375545412305959654
+    second: wizard idle _7
+  - first:
+      213: -3956607759173422245
+    second: wizard idle _8
+  - first:
+      213: 4681093934062220247
+    second: wizard idle _9
+  - first:
+      213: -4380753516195461007
+    second: wizard idle _10
+  - first:
+      213: -1025199297484659882
+    second: wizard idle _11
+  - first:
+      213: -1240826113091353209
+    second: wizard idle _12
+  - first:
+      213: 6095305425213491800
+    second: wizard idle _13
+  - first:
+      213: 1727401347634716452
+    second: wizard idle _14
+  - first:
+      213: 6883775574117289100
+    second: wizard idle _15
+  - first:
+      213: 992341173424566683
+    second: wizard idle _16
+  - first:
+      213: 1210877931351286627
+    second: wizard idle _17
+  - first:
+      213: -7153320403605370021
+    second: wizard idle _18
+  - first:
+      213: -1171191653137686850
+    second: wizard idle _19
+  - first:
+      213: 7030570637193154460
+    second: wizard idle _20
+  - first:
+      213: 5491792384468567596
+    second: wizard idle _21
+  - first:
+      213: -9105121612672849151
+    second: wizard idle _22
+  - first:
+      213: -2913330882409223086
+    second: wizard idle _23
+  - first:
+      213: -1496600868830839673
+    second: wizard idle _24
+  - first:
+      213: 2844944029420752156
+    second: wizard idle _25
+  - first:
+      213: -2169823285894235885
+    second: wizard idle _26
+  - first:
+      213: -1273826375775539624
+    second: wizard idle _27
+  - first:
+      213: -5441349903256636022
+    second: wizard idle _28
+  - first:
+      213: -4800193257968027673
+    second: wizard idle _29
+  - first:
+      213: -8850103610621565269
+    second: wizard idle _30
+  - first:
+      213: 5399877019510502793
+    second: wizard idle _31
+  - first:
+      213: -1056389136225516981
+    second: wizard idle _32
+  - first:
+      213: -6295742772835673988
+    second: wizard idle _33
+  - first:
+      213: -322343310038104936
+    second: wizard idle _34
+  - first:
+      213: 94713776826033957
+    second: wizard idle _35
+  - first:
+      213: 4968168006032321590
+    second: wizard idle _36
+  - first:
+      213: 8982861620229994905
+    second: wizard idle _37
+  - first:
+      213: 4784015083942706230
+    second: wizard idle _38
+  - first:
+      213: 482291142229464881
+    second: wizard idle _39
+  - first:
+      213: 522347401853402175
+    second: wizard idle _40
+  - first:
+      213: 6162958401057705234
+    second: wizard idle _41
+  - first:
+      213: 1601700767761572298
+    second: wizard idle _42
+  - first:
+      213: -9055518162967491991
+    second: wizard idle _43
+  - first:
+      213: 6748865022571954765
+    second: wizard idle _44
+  - first:
+      213: -4754049207740179965
+    second: wizard idle _45
+  - first:
+      213: -2148605560603881665
+    second: wizard idle _46
+  - first:
+      213: 6248780828426029436
+    second: wizard idle _47
+  - first:
+      213: -8115729336940101192
+    second: wizard idle _48
+  - first:
+      213: -6348199902798676320
+    second: wizard idle _49
+  - first:
+      213: 984502288479612344
+    second: wizard idle _50
+  - first:
+      213: 2069704328430528892
+    second: wizard idle _51
+  - first:
+      213: 9157192135060006783
+    second: wizard idle _52
+  - first:
+      213: 5122735295613607447
+    second: wizard idle _53
+  - first:
+      213: 926727792647553783
+    second: wizard idle _54
+  - first:
+      213: -594336253487470962
+    second: wizard idle _55
+  - first:
+      213: -3071805000769468919
+    second: wizard idle _56
+  - first:
+      213: -3943378873351718887
+    second: wizard idle _57
+  - first:
+      213: 1055994963940911109
+    second: wizard idle _58
+  - first:
+      213: 4937022599948266658
+    second: wizard idle _59
+  - first:
+      213: -2124028848742448066
+    second: wizard idle _60
+  - first:
+      213: 5837208857898108535
+    second: wizard idle _61
+  - first:
+      213: 8386648681990766728
+    second: wizard idle _62
+  - first:
+      213: 167819531846150385
+    second: wizard idle _63
+  - first:
+      213: -3963362264313966613
+    second: wizard idle _64
+  - first:
+      213: 7251355442626971318
+    second: wizard idle _65
+  - first:
+      213: -2714075081567995177
+    second: wizard idle _66
+  - first:
+      213: -8636332366025446766
+    second: wizard idle _67
+  - first:
+      213: -290552947243920531
+    second: wizard idle _68
+  - first:
+      213: 6973090070760976903
+    second: wizard idle _69
+  - first:
+      213: -5868867371687353087
+    second: wizard idle _70
+  - first:
+      213: 4981186705298669957
+    second: wizard idle _71
+  - first:
+      213: 3876303812845811679
+    second: wizard idle _72
+  - first:
+      213: 3256397616560487588
+    second: wizard idle _73
+  - first:
+      213: 621344532518369460
+    second: wizard idle _74
+  - first:
+      213: 8091188684158913586
+    second: wizard idle _75
+  - first:
+      213: 6054233392875220433
+    second: wizard idle _76
+  - first:
+      213: 5813526863983064633
+    second: wizard idle _77
+  - first:
+      213: 5423022923303795748
+    second: wizard idle _78
+  - first:
+      213: 7974097880807316626
+    second: wizard idle _79
+  - first:
+      213: -7795673299920882619
+    second: wizard idle _80
+  - first:
+      213: 7127607926938590199
+    second: wizard idle _81
+  - first:
+      213: 6673586781373565725
+    second: wizard idle _82
+  - first:
+      213: 636466587675597733
+    second: wizard idle _83
+  - first:
+      213: -2533341432575481848
+    second: wizard idle _84
+  - first:
+      213: -6511119308210346247
+    second: wizard idle _85
+  - first:
+      213: -3459055585675344020
+    second: wizard idle _86
+  - first:
+      213: -3788499522939465295
+    second: wizard idle _87
+  - first:
+      213: -394776326602290798
+    second: wizard idle _88
+  - first:
+      213: 7814034878603608944
+    second: wizard idle _89
+  - first:
+      213: 8365137136559234755
+    second: wizard idle _90
+  - first:
+      213: -6777743745180372608
+    second: wizard idle _91
+  - first:
+      213: -7022291468200427422
+    second: wizard idle _92
+  - first:
+      213: 8930172292003445434
+    second: wizard idle _93
+  - first:
+      213: 258346530098219420
+    second: wizard idle _94
+  - first:
+      213: 4722715578274427777
+    second: wizard idle _95
+  - first:
+      213: -3435416514458879702
+    second: wizard idle _96
+  - first:
+      213: -6541762231558127954
+    second: wizard idle _97
+  - first:
+      213: 9064874108195732800
+    second: wizard idle _98
+  - first:
+      213: -4271732926624827754
+    second: wizard idle _99
+  - first:
+      213: -8310683224387290400
+    second: wizard idle _100
+  - first:
+      213: 1343078930078107494
+    second: wizard idle _101
+  - first:
+      213: -8716884200347078147
+    second: wizard idle _102
+  - first:
+      213: -2641333302749868138
+    second: wizard idle _103
+  - first:
+      213: -5695275625071051190
+    second: wizard idle _104
+  - first:
+      213: -3859352294506711909
+    second: wizard idle _105
+  - first:
+      213: 7294916545726440907
+    second: wizard idle _106
+  - first:
+      213: 8962486511055004243
+    second: wizard idle _107
+  - first:
+      213: -6477542112149816415
+    second: wizard idle _108
+  - first:
+      213: -3721473020258980832
+    second: wizard idle _109
+  - first:
+      213: -5836777067769373058
+    second: wizard idle _110
+  - first:
+      213: -6198376410065507653
+    second: wizard idle _111
+  - first:
+      213: 6982147523858387948
+    second: wizard idle _112
+  - first:
+      213: 3754945079576370356
+    second: wizard idle _113
+  - first:
+      213: -3344030187664294212
+    second: wizard idle _114
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wizard idle _0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b302f76b2db438b20800000000000000
+      internalID: 3135433133956997179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0b20b5ae3417c70800000000000000
+      internalID: 8967023006899679458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8030f12931a24cc0800000000000000
+      internalID: -3728240274754752370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bd4904cd981f6f0800000000000000
+      internalID: -652588891922703606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf33635c3e81f21a0800000000000000
+      internalID: -6832214743152446468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c94079cddd029ef0800000000000000
+      internalID: -103004595257587261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8308e5880a180d890800000000000000
+      internalID: -7435300458306043848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15c9e051a0f643c0800000000000000
+      internalID: -4375545412305959654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53f9eeb43e4719c0800000000000000
+      internalID: -3956607759173422245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle _9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3b30ca12696f040800000000000000
+      internalID: 4681093934062220247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

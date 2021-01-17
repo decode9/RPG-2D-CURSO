@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
         return actualHealth;
     } set{
         if(value >= 0 && value <= initialHealth) actualHealth = value;
-        if(value <= 0) Destroy(gameObject, 1f);
+        if(value <= 0) OnDie.Invoke();
         if(value > initialHealth) actualHealth = initialHealth;        
     }}
     // Start is called before the first frame update
@@ -19,5 +19,9 @@ public class Health : MonoBehaviour
     }
     public void modifyHealth(int amount){
         healthProperty += amount;
+    }
+
+    private void DestroyGameObject(){
+        Destroy(gameObject);
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class Attributes: ScriptableObject
 {
     // Start is called before the first frame update
+    [Tooltip("Movement Velocity")]
     public int velocity;
+    [Tooltip("Attack Power")]
     public int ataque;
 }

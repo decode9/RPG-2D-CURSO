@@ -1,10 +1,10 @@
 ﻿
 using UnityEngine;
 
-public class Knight : EnemyIA
+public class Wizard : EnemyIA
 {
     
-    
+    public Projectile fireBole;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,6 +12,7 @@ public class Knight : EnemyIA
         animator = GetComponent<Animator>();
         mySprite = GetComponent<SpriteRenderer>();
         attacker = GetComponent<Attacker>();
+        ability = GetComponent<Ability>();
         runHash = Animator.StringToHash("run");
         xHash = Animator.StringToHash("x");
         yHash = Animator.StringToHash("y");
@@ -24,5 +25,18 @@ public class Knight : EnemyIA
     {   
         Animation();
         Behaviour();
+    }
+
+    protected override void AttackEnemy()
+    {
+        ability.ShotProjectile(fireBole, fireBole.initialVelocity, enemyInput.playerDirection, attributes.ataque);
+    }
+
+
+
+    protected override void MoveToPlayer(){
+        mySprite.flipX = (enemyInput.playerDirection.x > 0);
+        transform.position += (Vector3) enemyInput.playerDirection * attributes.velocity * Time.deltaTime;
+        animator.SetBool(runHash, true);
     }
 }

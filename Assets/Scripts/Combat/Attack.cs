@@ -16,6 +16,6 @@ public class Attack : MonoBehaviour
 
     public void ReceiveAttack(int damage, Vector2 attackDirection){
         myHealth.modifyHealth(-damage);
-        myRigid.AddForce(attackDirection * damage *100);
+        myRigid.AddForce(attackDirection * damage * 50);
     }
 }

@@ -16,6 +16,7 @@ public class Attacker : MonoBehaviour
     void Start()
     {
         attackFilter.layerMask = attackLayer;   
+        attackFilter.useLayerMask = true;
     }
 
     public void Attack(Vector2 attackDirection, int damage){
@@ -27,7 +28,7 @@ public class Attacker : MonoBehaviour
         for (int i = 0; i < numColliders; i++){
             
             attackedObject = attackCollider[i].gameObject;
-            if(attackedObject != gameObject && attackedObject.GetComponent<Attack>()) attackedObject.GetComponent<Attack>().ReceiveAttack(damage, attackDirection);
+            if(attackedObject.GetComponent<Attack>()) attackedObject.GetComponent<Attack>().ReceiveAttack(damage, attackDirection);
         }
     }
 
