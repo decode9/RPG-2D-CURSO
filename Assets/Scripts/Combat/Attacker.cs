@@ -27,7 +27,7 @@ public class Attacker : MonoBehaviour
         for (int i = 0; i < numColliders; i++){
             
             attackedObject = attackCollider[i].gameObject;
-            if(attackedObject != gameObject && attackedObject.GetComponent<Attack>()) attackedObject.GetComponent<Attack>().ReceiveAttack();
+            if(attackedObject != gameObject && attackedObject.GetComponent<Attack>()) attackedObject.GetComponent<Attack>().ReceiveAttack(damage, attackDirection);
         }
     }
 

@@ -1,15 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
-public class Attributes : MonoBehaviour
+public class Knight : Enemy
 {
     // Start is called before the first frame update
-    public int velocity;
-    public int ataque;
     void Start()
     {
-        
+        DecirNombre();
     }
 
     // Update is called once per frame

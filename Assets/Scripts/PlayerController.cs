@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Attributes))]
 public class PlayerController : MonoBehaviour
 {
     private InputController InputPlayer;
@@ -12,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer mySprite; 
 
-    private Attributes playerAttributes;
+    public Attributes playerAttributes;
     int runHash;
     int xHash;
     int yHash;
@@ -26,7 +25,6 @@ public class PlayerController : MonoBehaviour
         myRigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         mySprite = GetComponent<SpriteRenderer>();
-        playerAttributes = GetComponent<Attributes>();
         attacker = GetComponent<Attacker>();
         runHash = Animator.StringToHash("correr");
         xHash = Animator.StringToHash("x");
