@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5844345015068084591}
   - component: {fileID: 4986788963932377890}
   - component: {fileID: 7282924468362523965}
+  - component: {fileID: 4843505079723431272}
   m_Layer: 8
   m_Name: Wizard
   m_TagString: Untagged
@@ -57,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 36a7b4c6bd031ac4599a2da863da40a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -248,5 +249,20 @@ MonoBehaviour:
   attributes: {fileID: 11400000, guid: 1e18f7721bf0eac4aaa774d08eba6263, type: 2}
   name: Mango
   exp: 10
-  detectionDistance: 6
-  attackDistance: 3
+  detectionDistance: 10
+  attackDistance: 6
+  fireBole: {fileID: 4756256492545120839, guid: 4df882869d9a80b4ab065dbaf0f98c70,
+    type: 3}
+  tagObjective: Player
+--- !u!114 &4843505079723431272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282924468362523964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38de78e6bb84f9b4685d8f28c0df390b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

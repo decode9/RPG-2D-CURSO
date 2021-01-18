@@ -5,6 +5,7 @@ public class Wizard : EnemyIA
 {
     
     public Projectile fireBole;
+    public string tagObjective;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +30,9 @@ public class Wizard : EnemyIA
 
     protected override void AttackEnemy()
     {
-        ability.ShotProjectile(fireBole, fireBole.initialVelocity, enemyInput.playerDirection, attributes.ataque);
+        mySprite.flipX = (enemyInput.playerDirection.x > 0);
+        ability.ShotProjectile(fireBole, fireBole.initialVelocity, enemyInput.playerDirection, attributes.ataque, tagObjective);
     }
-
-
 
     protected override void MoveToPlayer(){
         mySprite.flipX = (enemyInput.playerDirection.x > 0);

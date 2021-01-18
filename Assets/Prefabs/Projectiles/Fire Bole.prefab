@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5366524697469176471}
   - component: {fileID: 4756256492545120839}
   - component: {fileID: 1007747866481072130}
+  - component: {fileID: 8871286944522930628}
   m_Layer: 0
   m_Name: Fire Bole
   m_TagString: Untagged
@@ -120,3 +121,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &8871286944522930628
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3403851107690048555}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 6.535204e-10, y: 0.0054821274}
+  m_Size: {x: 1.0625002, y: 0.3499335}
+  m_Direction: 1
