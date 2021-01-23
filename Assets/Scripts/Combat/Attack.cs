@@ -2,7 +2,7 @@
 
 public class Attack : MonoBehaviour
 {
-    private Health myHealth;
+    public Health myHealth {get; private set;}
     private Rigidbody2D myRigid;
 
     private void Start() {

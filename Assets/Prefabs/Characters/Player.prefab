@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 34061078}
   - component: {fileID: 34061079}
   - component: {fileID: 6387380742476725473}
+  - component: {fileID: 34061088}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -58,7 +59,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 36a7b4c6bd031ac4599a2da863da40a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -217,11 +218,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f3fbf8a0f13864680c721499d84b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desfase: 2
-  hitBox: {x: 2, y: 2}
+  desfase: 1
+  hitBox: {x: 1, y: 1}
   attackLayer:
     serializedVersion: 2
     m_Bits: 256
+  shock: {fileID: 881412382360009773, guid: 60ebb2bb5f75cb24b826426f63c7dfc8, type: 3}
 --- !u!114 &34061079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4a8a9aeb375f248855c51ee98282b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 10
+  initialHealth: 20
   OnDie:
     m_PersistentCalls:
       m_Calls: []
@@ -250,3 +252,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c9627cb22828d1428a7ba14cc01e395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &34061088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8235212186188990511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba5c968ac5b9c64498e422344b23a8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localTextHit: {fileID: 995967923139014234, guid: 9288d26394a08974db4e69314133365c,
+    type: 3}

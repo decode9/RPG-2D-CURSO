@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     protected int xHash;
     protected int yHash;
     protected int dieHash;
+    public GameObject puff;
 
     protected void Animation(){
         
@@ -26,6 +27,10 @@ public class Enemy : MonoBehaviour
 
     public void Die(){
         animator.SetBool(dieHash, true);
+    }
+
+    public void Puff(){
+        Instantiate(puff, transform);
     }
     
 }

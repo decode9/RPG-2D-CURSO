@@ -17,6 +17,7 @@ public class Knight : EnemyIA
         yHash = Animator.StringToHash("y");
         attackHash = Animator.StringToHash("attack");
         dieHash = Animator.StringToHash("die");
+        Instantiate(puff, transform);
     }
 
     // Update is called once per frame

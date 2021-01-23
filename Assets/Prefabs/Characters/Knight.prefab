@@ -124,6 +124,7 @@ MonoBehaviour:
   attributes: {fileID: 11400000, guid: a9ad7da872be8eb4db261379c4219013, type: 2}
   name: weboman
   exp: 0
+  puff: {fileID: 2203764830928366494, guid: eea33d482f0449044917efde2fd55bc9, type: 3}
   detectionDistance: 5
   attackDistance: 3
 --- !u!114 &3762364272523800401
@@ -150,11 +151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f3fbf8a0f13864680c721499d84b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desfase: 1.5
-  hitBox: {x: 1.5, y: 1.5}
+  desfase: 1
+  hitBox: {x: 1, y: 1}
   attackLayer:
     serializedVersion: 2
     m_Bits: 1024
+  shock: {fileID: 1954178169945773754, guid: 34f387f1af808f84180327f63ee48109, type: 3}
 --- !u!114 &603302306091207183
 MonoBehaviour:
   m_ObjectHideFlags: 0

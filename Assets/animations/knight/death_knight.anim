@@ -38,15 +38,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.5317049
-      - serializedVersion: 3
-        time: 1.8000001
-        value: 0.00000017881393
-        inSlope: -1.1796528
-        outSlope: -1.1796528
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0866123
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -65,15 +56,6 @@ AnimationClip:
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8
-        value: 0
-        inSlope: -1.5271382
-        outSlope: -1.5271382
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.07206784
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -94,15 +76,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8
-        value: 0
-        inSlope: -1.4152412
-        outSlope: -1.4152412
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.06334119
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -121,15 +94,6 @@ AnimationClip:
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8
-        value: 0
-        inSlope: -1.6037358
-        outSlope: -1.6037358
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.045887962
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -187,6 +151,13 @@ AnimationClip:
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 0
       attribute: 4215373228
       script: {fileID: 0}
       typeID: 212
@@ -206,13 +177,6 @@ AnimationClip:
       typeID: 212
       customType: 0
       isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 2545056068352777350, guid: cd896fc1912998e458d94f53e123eb8c, type: 3}
     - {fileID: 2676730388748489702, guid: cd896fc1912998e458d94f53e123eb8c, type: 3}
@@ -265,15 +229,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.5317049
-      - serializedVersion: 3
-        time: 1.8000001
-        value: 0.00000017881393
-        inSlope: -1.1796528
-        outSlope: -1.1796528
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0866123
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -292,15 +247,6 @@ AnimationClip:
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8
-        value: 0
-        inSlope: -1.5271382
-        outSlope: -1.5271382
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.07206784
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -321,15 +267,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8
-        value: 0
-        inSlope: -1.4152412
-        outSlope: -1.4152412
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.06334119
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -349,15 +286,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1.8
-        value: 0
-        inSlope: -1.6037358
-        outSlope: -1.6037358
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.045887962
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -371,6 +299,13 @@ AnimationClip:
   m_Events:
   - time: 1.6
     functionName: DestroyGameObject
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.6
+    functionName: Puff
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

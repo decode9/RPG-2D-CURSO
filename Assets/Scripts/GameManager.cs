@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     private static GameManager _instance;
     public static GameManager instance {get {return _instance;} }
+    
+    public Transform projectileContainer;
 
     private void Awake() {
         if (_instance == null) _instance = this;
