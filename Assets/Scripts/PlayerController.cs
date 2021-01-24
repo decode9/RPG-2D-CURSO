@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update() {
         Attack();
+        CheckInventory();
     }
 
     // Update is called once per frame
@@ -50,6 +51,10 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat(xHash, InputPlayer.lookDirection.x);
             animator.SetFloat(yHash, InputPlayer.lookDirection.y);
         };
+    }
+
+    private void CheckInventory(){
+        if(InputPlayer.inventario) MenuPanel.instance.OpenClosePanels();
     }
 
     void Animation(float[] movimiento){
