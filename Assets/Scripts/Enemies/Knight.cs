@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Knight : EnemyIA
 {
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class Knight : EnemyIA
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         Animation();
         Behaviour();
     }

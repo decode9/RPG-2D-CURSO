@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyInput))]
 public class Enemy : MonoBehaviour
 {
-    
+
     public Attributes attributes;
     protected EnemyInput enemyInput;
     public string name;
@@ -14,23 +14,37 @@ public class Enemy : MonoBehaviour
     protected int yHash;
     protected int dieHash;
     public GameObject puff;
+    private bool die;
 
-    protected void Animation(){
-        
-        bool run = (enemyInput.playerDirection.y != 0 ||enemyInput.playerDirection.x != 0);
-        
-        if (run){
+    protected void Animation()
+    {
+
+        bool run = (enemyInput.playerDirection.y != 0 || enemyInput.playerDirection.x != 0);
+
+        if (run)
+        {
             animator.SetFloat(xHash, enemyInput.playerDirection.x);
             animator.SetFloat(yHash, enemyInput.playerDirection.y);
         };
     }
 
-    public void Die(){
-        animator.SetBool(dieHash, true);
+    public void GiveExperience()
+    {
+        GameManager.instance.player.GetComponent<ExperienceLevel>().experience = exp;
     }
 
-    public void Puff(){
+    public void Die()
+    {
+        if (!die)
+        {
+            die = true;
+            animator.SetBool(dieHash, true);
+            GiveExperience();
+        }
+    }
+    public void Puff()
+    {
         Instantiate(puff, transform);
     }
-    
+
 }

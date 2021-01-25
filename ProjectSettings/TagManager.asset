@@ -17,7 +17,7 @@ TagManager:
   - Interactive
   - Walls
   - player
-  - 
+  - Minimap
   - 
   - 
   - 
@@ -59,4 +59,7 @@ TagManager:
     locked: 0
   - name: Text
     uniqueID: 1615140873
+    locked: 0
+  - name: miniMap
+    uniqueID: 1732078197
     locked: 0

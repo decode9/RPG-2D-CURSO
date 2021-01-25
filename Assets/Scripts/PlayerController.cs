@@ -9,15 +9,18 @@ public class PlayerController : MonoBehaviour
     private float[] movimiento = new float[2];
     private Rigidbody2D myRigid;
     private Animator animator;
-    private SpriteRenderer mySprite; 
+    private SpriteRenderer mySprite;
 
     public Attributes playerAttributes;
+    private Health health;
+    private ExperienceLevel experienceLevel;
     int runHash;
     int xHash;
     int yHash;
     int attackHash;
     private Attacker attacker;
     // Start is called before the first frame update
+
     void Start()
     {
         InputPlayer = GetComponent<InputController>();
@@ -26,13 +29,17 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         mySprite = GetComponent<SpriteRenderer>();
         attacker = GetComponent<Attacker>();
+        health = GetComponent<Health>();
+        experienceLevel = GetComponent<ExperienceLevel>();
         runHash = Animator.StringToHash("correr");
         xHash = Animator.StringToHash("x");
         yHash = Animator.StringToHash("y");
         attackHash = Animator.StringToHash("attack");
+        AttributePanel.instance.UpdateTextAttributes(playerAttributes, health, experienceLevel);
     }
 
-    private void Update() {
+    private void Update()
+    {
         Attack();
         CheckInventory();
     }
@@ -43,25 +50,30 @@ public class PlayerController : MonoBehaviour
         movePlayer();
     }
 
-    private void Attack(){
+    private void Attack()
+    {
         bool attack = InputPlayer.atacar;
-        
-        if(attack){
+
+        if (attack)
+        {
             animator.SetBool(attackHash, attack);
             animator.SetFloat(xHash, InputPlayer.lookDirection.x);
             animator.SetFloat(yHash, InputPlayer.lookDirection.y);
         };
     }
 
-    private void CheckInventory(){
-        if(InputPlayer.inventario) MenuPanel.instance.OpenClosePanels();
+    private void CheckInventory()
+    {
+        if (InputPlayer.inventario) MenuPanel.instance.OpenClosePanels();
     }
 
-    void Animation(float[] movimiento){
+    void Animation(float[] movimiento)
+    {
         bool run = (movimiento[1] != 0 || movimiento[0] != 0);
 
         animator.SetBool(runHash, run);
-        if (run){
+        if (run)
+        {
             animator.SetFloat(xHash, movimiento[0]);
             animator.SetFloat(yHash, movimiento[1]);
         };
@@ -70,18 +82,19 @@ public class PlayerController : MonoBehaviour
     void movePlayer()
     {
         movimiento = InputPlayer.vector;
-        
+
         Animation(movimiento);
         // ---- Movimiento de Cuerpo Rigido ---- //
         Vector2 velocityVector = new Vector2(movimiento[0], movimiento[1]) * playerAttributes.velocity;
-        if(animator.GetBool(attackHash)) velocityVector = Vector2.zero;
-        
+        if (animator.GetBool(attackHash)) velocityVector = Vector2.zero;
+
         //myRigid.AddForce(velocityVector);
         myRigid.velocity = velocityVector;
 
     }
 
-    void AttackController(){
+    void AttackController()
+    {
         attacker.Attack(InputPlayer.lookDirection, playerAttributes.ataque);
         animator.SetBool(attackHash, false);
     }
