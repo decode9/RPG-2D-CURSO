@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4843505079723431272}
   m_Layer: 8
   m_Name: Wizard
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,8 +234,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4a8a9aeb375f248855c51ee98282b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 10
+  healthBase: 20
   healthBar: {fileID: 0}
+  healthModificator: 0
   OnDie:
     m_PersistentCalls:
       m_Calls:
@@ -332,7 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attributes: {fileID: 11400000, guid: 1e18f7721bf0eac4aaa774d08eba6263, type: 2}
   name: Mango
-  exp: 10
+  exp: 20
   puff: {fileID: 2203764830928366494, guid: eea33d482f0449044917efde2fd55bc9, type: 3}
   detectionDistance: 10
   attackDistance: 6

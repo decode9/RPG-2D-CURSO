@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 5920519183083650700}
   - component: {fileID: 8695764911987016130}
   - component: {fileID: 788351381}
-  m_Layer: 0
+  - component: {fileID: 1493247425}
+  m_Layer: 8
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4a8a9aeb375f248855c51ee98282b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 2
+  healthBase: 0
+  healthBar: {fileID: 0}
+  healthModificator: 0
   OnDie:
     m_PersistentCalls:
       m_Calls: []
@@ -161,3 +164,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1493247425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920519183083650696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145381783730cc74e967d5f42916a2f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteraction:
+    m_PersistentCalls:
+      m_Calls: []

@@ -1,4 +1,5 @@
-﻿
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum Attribute
@@ -68,5 +69,26 @@ public class Attributes : ScriptableObject
     public void ModifyHealth(Health health, int amount)
     {
         health.healthModificator += amount;
+    }
+
+    public void UpdateEquipment(List<Equipment> equipments){
+        GameObject player = GameManager.instance.player;
+        Health health = player.GetComponent<Health>();
+        ExperienceLevel experience = player.GetComponent<ExperienceLevel>();
+        ResetModificator();
+        foreach (Equipment equipment in equipments)
+        {
+            velocityModificator += equipment.velocity;
+            attackModificator += equipment.attack;
+            health.healthModificator += equipment.health;
+        }
+        health.UpdateHealthBar();
+        AttributePanel.instance.UpdateTextAttributes(this, health, experience);
+    }
+
+    public void ResetModificator(){
+        velocityModificator = 0;
+        attackModificator = 0;
+        GameManager.instance.player.GetComponent<Health>().healthModificator = 0;
     }
 }

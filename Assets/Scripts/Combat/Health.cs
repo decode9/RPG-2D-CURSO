@@ -40,9 +40,9 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void UpdateHealthBar()
+    public void UpdateHealthBar()
     {
-        if (healthBar) healthBar.fillAmount = (float)actualHealth / myHealth;
+        if (healthBar) healthBar.fillAmount = (float) actualHealth / myHealth;
     }
 
     public void ModifyBaseHealth(int amount)

@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: PlayerAttributes
   m_EditorClassIdentifier: 
   velocityBase: 5
-  attackBase: 10
-  healthBase: 20
+  attackBase: 5
   magicBase: 10

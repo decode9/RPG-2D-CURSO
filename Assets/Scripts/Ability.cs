@@ -20,15 +20,20 @@ public class Ability : MonoBehaviour
     {
         Projectile myProjectile = Instantiate(projectile, transform.position, Quaternion.identity);
         //myProjectile.gameObject.transform.SetParent(transform);
-		myProjectile.gameObject.transform.SetParent(GameManager.instance.projectileContainer);
-		float rotationAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        myProjectile.transform.Rotate(0,0,rotationAngle);
+        myProjectile.gameObject.transform.SetParent(GameManager.instance.projectileContainer);
+        float rotationAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        myProjectile.transform.Rotate(0, 0, rotationAngle);
 
         myProjectile.initialVelocity = initialVelocity;
         myProjectile.initialDirection = direction;
         myProjectile.damage = damage;
         myProjectile.objectiveTag = tagObjective;
+    }
 
-        
+    public bool Dash(Vector2 dashDirection, Rigidbody2D rigidbody2D)
+    {
+        Vector2 velocityDirection = dashDirection.normalized * 20;
+        rigidbody2D.velocity = velocityDirection;
+        return true;
     }
 }

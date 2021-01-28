@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour
         {
             die = true;
             animator.SetBool(dieHash, true);
+            gameObject.layer = 13;
             GiveExperience();
         }
     }

@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 1095127485}
   m_Layer: 8
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,10 +206,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attributes: {fileID: 11400000, guid: a9ad7da872be8eb4db261379c4219013, type: 2}
   name: weboman
-  exp: 10
+  exp: 50
   puff: {fileID: 2203764830928366494, guid: eea33d482f0449044917efde2fd55bc9, type: 3}
   detectionDistance: 5
-  attackDistance: 3
+  attackDistance: 2
 --- !u!114 &3762364272523800401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,8 +252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f4a8a9aeb375f248855c51ee98282b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 20
+  healthBase: 20
   healthBar: {fileID: 0}
+  healthModificator: 0
   OnDie:
     m_PersistentCalls:
       m_Calls:

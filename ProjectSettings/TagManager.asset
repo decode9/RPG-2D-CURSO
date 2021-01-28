@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Jugador Prueba
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - Walls
   - player
   - Minimap
-  - 
-  - 
+  - Objeto
+  - Dead
   - 
   - 
   - 
@@ -62,4 +63,7 @@ TagManager:
     locked: 0
   - name: miniMap
     uniqueID: 1732078197
+    locked: 0
+  - name: Drop
+    uniqueID: 892123493
     locked: 0

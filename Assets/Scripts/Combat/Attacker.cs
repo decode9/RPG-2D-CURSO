@@ -5,6 +5,8 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
 
+    public AudioClip attackSound;
+    private AudioSource audioSource;
     public float desfase = 1.5f;
     public Vector2 hitBox = new Vector2(1.5f, 1.5f);
     private Vector2 attackVector;
@@ -20,6 +22,7 @@ public class Attacker : MonoBehaviour
         attackFilter.layerMask = attackLayer;
         attackFilter.useLayerMask = true;
         textHitGeneration = GetComponent<TextHitGeneration>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Attack(Vector2 attackDirection, int damage)
@@ -34,9 +37,10 @@ public class Attacker : MonoBehaviour
 
             attackedObject = attackCollider[i].gameObject;
             Attack attack = attackedObject.GetComponent<Attack>();
+            if (audioSource) audioSource.clip = attackSound;
+            if (attackSound) audioSource.Play();
             if (attack)
             {
-                Debug.Log(attack.myHealth);
                 attack.ReceiveAttack(damage, attackDirection);
                 if (shock && attack.myHealth.healthProperty != 0) Instantiate(shock, attackedObject.transform);
                 if (textHitGeneration && attack.myHealth.healthProperty != 0) textHitGeneration.CreateTextHit(textHitGeneration.localTextHit, damage, attackedObject.transform, 0.25f, Color.white, 2);
